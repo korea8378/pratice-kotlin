@@ -12,6 +12,12 @@ class PersonTwo(val firstName: String, val lastName: String) {
         firstName.hashCode() * 37 + lastName.hashCode()
 }
 
+fun printSum(c: Collection<Int>) {
+    if (c is List<Int>) {
+        println(c.sum())
+    }
+}
+
 fun main(args: Array<String>) {
     val p1 = PersonTwo("Dmitry", "Jemerov")
     val p2 = PersonTwo("Dmitry", "Jemerov")
